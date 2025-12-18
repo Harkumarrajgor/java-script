@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Number: <input type="text"> <br> <br>
+    <button onclick="one()">Click me</button> <br>
+    <span></span>
+
+    <script>
+        ins = document.querySelector("input")
+        sp1 = document.querySelector("span")
+
+        function one()
+        {
+            if((ins.value)%2==0)
+            {
+                sp1.innerText = "Number is even !!"
+            }
+            else
+            {
+                sp1.innerText = "Number is odd !!"
+            }
+        }
+    </script>
+</body>
+</html>
