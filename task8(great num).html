@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Number 1 : <input type="number" id="one"> <br> <br>
+    Number 2 : <input type="number" id="two"> <br> <br>
+    <button onclick="one()">Click me</button> <br>
+    <span></span>
+
+    <script>
+        ins1 = document.getElementById("one")
+        ins2 = document.getElementById("two")
+        sp1 = document.querySelector("span")
+
+        function one()
+        {
+            if((Number(ins1.value)) > (Number(ins2.value)))
+            {
+                sp1.innerText = "Number 1 is Greater!!"  
+            }
+            else
+            {
+                sp1.innerText = "Number 2 is Greater!!"
+            }
+        }
+    </script>
+</body>
+</html>
