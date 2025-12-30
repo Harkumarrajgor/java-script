@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            color: cyan;
+        }
+
+        .two {
+            color: green;
+        }
+
+        .three {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="one()">Cyan</button> <br> <br>
+    <button onclick="two()">Green</button> <br> <br>
+    <button onclick="three()">Yellow</button> <br> <br>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laudantium repudiandae vero officia, odio ab eos
+        asperiores rerum veniam enim quisquam, velit accusamus, quo totam! Aspernatur minima nobis cupiditate atque!
+    </p>
+
+    <script>
+        function one() {
+            p = document.querySelector("p")
+            p.className = "one"
+        }
+
+        function two() {
+            p = document.querySelector("p")
+            p.className = "two"
+        }
+
+        function three() {
+            p = document.querySelector("p")
+            p.className = "three"
+        }
+    </script>
+</body>
+</html>
