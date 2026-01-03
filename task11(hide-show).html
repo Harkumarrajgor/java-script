@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            display: none;
+        }
+
+        .two{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae pariatur quis enim laudantium quaerat?</p> <br>
+    <button id="one">Hide</button>
+    <button id="two">Show</button>
+    <button id="three">Hide</button>
+    <script>
+            btn = document.querySelector("#one")
+            btn.addEventListener("click",function()
+            {
+                p = document.querySelector("p")
+                p.className = "one"
+            })
+
+            btn = document.querySelector("#two")
+            btn.addEventListener("click",function()
+            {
+                p = document.querySelector("p")
+                p.className = "two"
+            })
+
+            btn = document.querySelector("#three")
+            btn.addEventListener("click",function()
+            {
+                p = document.querySelector("p")
+
+                if(p.className == "one")
+                {
+                    p.className = "two"
+                    btn.textContent = "Hide"
+                }
+                else
+                {
+                   p.className = "one"
+                   btn.textContent = "Show"
+                }
+            })
+    </script>
+</body>
+</html>
