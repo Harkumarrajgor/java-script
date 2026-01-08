@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    Task: <input type="text"> <br> <br>
+    <button onclick="one()">Add</button> <br>
+
+    <script>
+        function one() {
+            sp = document.querySelector('input')
+
+            ul = document.createElement("ul")
+            document.body.append(ul)
+
+            li = document.createElement("li")
+            li.innerHTML = sp.value
+
+            ul.append(li)
+
+            sp.value = " "
+
+            btn1 = document.createElement('button')
+            document.body.append(btn1)
+            btn1.innerHTML = "Update"
+            btn1.addEventListener('click',function()
+            {
+                p = prompt("Update a value")
+                document.querySelector('li').innerText = p.value
+            })
+
+            btn2 = document.createElement('button')
+            document.body.append(btn2)
+            btn2.innerHTML = "Delete"
+            btn2.addEventListener('click',function()
+            {
+                li.remove()
+            })   
+        }
+    </script>
+</body>
+</html>
